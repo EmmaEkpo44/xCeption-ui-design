@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.mother{
+    overflow-x: hidden;
+}
+
+.ul-container{
+    color: white;
+}
+
+#img-bg{
+    background-image: url(/images/tech-bg-13.jpg);
+    height: 140vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bg-2{
+    height: 100vw;
+    background-image: url(/images/tech-shot-2-removebg-preview.png);
+    background-repeat: no-repeat;
+    margin-top: -75px;
+    margin-left: 150px;
+}
+#lead-text{
+    
+    font-weight: 700;
+    margin-left:-12px ;
+    color: orangered;
+    animation-name:colorful;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: reverse;
+    animation-duration: 10s;
+}
+@keyframes colorful {
+    0%{
+        color: orangered;
+    }
+    25%{
+        color: purple;
+    }
+    50%{
+        color: red;
+    }
+    75%{
+        color: blue;
+
+    }
+    100%{
+        color: orangered;
+    }
+}
+
+#text-box{
+    border:3px solid white ;
+    outline: none ;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    transform: translateY(50px);
+}
+#btn-getStarted{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: orangered;
+    border: none;
+    width: 200px;
+    margin-top: -10px;  
+}
+#btn-getStarted:hover{
+    opacity:0.7;
+    transition: 1.5s;
+    transform: scale(0.9);
+    width: 250px;
+}
+a{
+    text-decoration: none;
+} 
+.nav-link:hover{
+    background-color: orangered;
+    margin-top: -20px;
+
+}
+
+
+#nav-box{
+    background-color: transparent;
+    margin-top: -25px;
+    margin-left: -30px;
+}
+
+
+#link2{
+    color:white;
+}
+#link3{
+    color:white;
+}
+#link4{
+    color:white;
+}
+#link5{
+    color:white;
+}
+    
+#brand-name{
+    color: white;
+    font-size:35px;
+    font-weight: 900;
+}
+#our-text{
+    font-weight: 700;
+    margin-left: 200px;
+}
+
+
+#card-1{
+    width: 18rem;
+    height: 60vh;
+}
+#card-1:hover{
+    opacity:0.7;
+    background-color: rgb(209, 209, 209);
+    transform: translateY(-50px);
+}
+#card-2{
+    width: 18rem;
+    height: 60vh;
+    
+}
+#card-2:hover{
+    opacity:0.7;
+    background-color: rgb(209, 209, 209);
+    transform: translateY(-50px);
+}
+#card-3{
+    width: 18rem;
+    height: 60vh;
+}
+#card-3:hover{
+    opacity:0.7;
+    background-color: rgb(209, 209, 209);
+    transform: translateY(-50px);
+}
+#bg-3{
+    background-image: url(/images/tech-bg-19.webp);
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+#card-box{
+    
+    cursor: pointer;
+    height: 70vh;
+    width: 20rem;
+    padding: 20px;
+}
+
+#card-show{
+    width: 25rem;
+    height: 60vh;
+}
+
+#brand-name{
+    color: white;
+    font-size:35px;
+    font-weight: 900;
+}
+
+#what-1-img{
+    animation-name:fromLeft;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-direction: none;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    position: relative;
+    width:30rem;
+    cursor: pointer; 
+    transform: scale(0.4);
+}
+@keyframes fromLeft {
+  from{
+      transform: scale(0.8);
+      transition: 1.5s;
+  }
+}
+#what-2-img{
+    animation-name:fromLeft;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-direction: none;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    position: relative;
+    width:30rem;
+    cursor: pointer; 
+    transform: scale(0.4);
+}
+
+@media(max-width:950px){
+    
+    #bg-2{
+        display: none;
+    }
+    #bg-3{
+        background-image: url(/images/tech-bg-19.webp);
+        background-size: cover;
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+    }
+    #card-box{
+        cursor: pointer;
+        height: 70vh;
+        width: 20rem;
+        padding: 20px;
+    }
+    #text-box{
+        border:3px solid white ;
+        outline: none ;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        transform: translateY(20px);
+    }
+    #arrow-key{
+        display: none;
+    }
+    #card-text-take{
+        transform: translateY(150px);
+    }
+   
+    #brand-name{
+        color: white;
+        font-size:25px;
+        font-weight: 900;
+    }
+
+    #lead-text{
+    
+        font-weight: 700;
+        margin-left:0px ;
+        margin-top: -20px;
+        color: orangered;
+        animation-name:colorful;
+        animation-delay: 1.5s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-direction: reverse;
+        animation-duration: 10s;
+    }
+    #brand-name{
+        color: white;
+        font-size:25px;
+        font-weight: 900;
+    }
+    #card-show{
+        width: 25rem;
+        height: 60vh;
+        align-items: center;
+        transform: translateX(30px);
+    }
+
+}
